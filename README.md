@@ -8,12 +8,12 @@
 
 ### Build
 ```
-docker build .
+docker build . --tag runicorn
 ```
 
 ### Run
 ```
-docker run -it -p 8080:8080 [container hash from previous step]
+docker run -it -p 8080:8080 runicorn
 ```
 ```
 Starting up http-server, serving .
