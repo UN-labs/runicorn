@@ -19,5 +19,3 @@ Feature: Game is playable as expected
     Given I have started the game
     When I press the space ber
     Then My unicorn jumps
-
-    
