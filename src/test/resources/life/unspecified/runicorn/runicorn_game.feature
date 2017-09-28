@@ -11,13 +11,11 @@ Feature: Game is playable as expected
 
   Scenario: Gameplay is restarted on a finished game
     Given the start game button is inactive
-    And the restart game is active
-    When I click restart ganme
+    And the restart button is active
+    When I click restart game
     Then the game starts
 
   Scenario: While game is active I am able to jump
     Given I have started the game
-    When I press the space ber
+    When I press the space bar
     Then My unicorn jumps
-
-    
