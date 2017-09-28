@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "Mini obstacle game",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test; node server.js"
   },
   "author": "Mehmet Burak Erman",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.14.1"
+    "chai": "^4.1.2",
+    "express": "^4.14.1",
+    "mocha": "^3.5.3"
   }
 }
