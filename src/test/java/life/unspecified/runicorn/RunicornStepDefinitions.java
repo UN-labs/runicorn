@@ -83,6 +83,7 @@ public class RunicornStepDefinitions {
 	public void i_have_started_the_game() throws Throwable {
 		runicornPage = runicornPage.reset();	
 		runicornPage.clickStartButton();
+		runicornPage.waitForPageStarted();
 	}
 
 	@When("^I press the space bar$")
