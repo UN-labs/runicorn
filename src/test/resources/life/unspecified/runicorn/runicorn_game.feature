@@ -10,8 +10,8 @@ Feature: Game is playable as expected
     Then the game starts
 
   Scenario: Gameplay is restarted on a finished game
-    Given the start game button is inactive
-    And the restart button is active
+    Given I have started the game
+    And I end the game
     When I click restart game
     Then the game starts
 

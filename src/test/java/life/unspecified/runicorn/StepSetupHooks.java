@@ -47,9 +47,9 @@ public class StepSetupHooks {
 		if (scenario != null && scenario.isFailed()) {
 			try {
 				scenario.write("Current Page URL is " + driver.getCurrentUrl());
-				System.out.println("Current Page URL is " + driver.getCurrentUrl());
-				System.out.println("Current Page title is\n" + driver.getTitle());
-				System.out.println("Current Page text  is\n" + driver.findElement(By.tagName("body")).getText());
+				// System.out.println("Current Page URL is " + driver.getCurrentUrl());
+				// System.out.println("Current Page title is\n" + driver.getTitle());
+				// System.out.println("Current Page text  is\n" + driver.findElement(By.tagName("body")).getText());
 			} catch (WebDriverException somePlatformsDontSupportScreenshots) {
 				System.err.println(somePlatformsDontSupportScreenshots.getMessage());
 			}

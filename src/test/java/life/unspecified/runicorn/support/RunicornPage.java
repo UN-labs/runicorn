@@ -4,10 +4,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.*;
+// import static org.junit.Assert.assertEquals;
+// import static org.junit.Assert.assertNotNull;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import java.lang.reflect.Method;
+// import static org.openqa.selenium.support.ui.ExpectedConditions.attributeContains;
+// import static org.openqa.selenium.support.ui.ExpectedConditions.not;
 
 public class RunicornPage {
 
@@ -43,25 +48,25 @@ public class RunicornPage {
     public void assertStartButtonEnabled() {
         WebElement startButton = getStartButton();
         assertNotNull("Start button must be present", startButton);
-        assertEquals("Start button class must be enabled", "start_game", startButton.getAttribute("class"));
+        assertFalse("Start button class must be disabled", startButton.getAttribute("class").contains("disable_button"));
     }
 
     public void assertStartButtonDisabled() {
         WebElement startButton = getStartButton();
         assertNotNull("Start button must be present", startButton);
-        assertEquals("Start button class must be disabled", "start_game disable_button", startButton.getAttribute("class"));
+        assertTrue("Start button class must be disabled", startButton.getAttribute("class").contains("disable_button"));
     }
 
     public void assertRestartButtonEnabled() {
         WebElement restartButton = getRestartButton();
         assertNotNull("Start button must be present", restartButton);
-        assertEquals("Start button class must be enabled", "init_game", restartButton.getAttribute("class"));
+        assertFalse("Restart button class must be enabled", restartButton.getAttribute("class").contains("disable_button"));
     }
 
     public void assertRestartButtonDisabled() {
         WebElement restartButton = getRestartButton();
         assertNotNull("Restart button must be present", restartButton);
-        assertEquals("Restart button class must be disabled", "init_game disable_button", restartButton.getAttribute("class"));
+        assertTrue("Start button class must be disabled", restartButton.getAttribute("class").contains("disable_button"));
     }
 
     public WebElement getTitle() {
@@ -70,6 +75,14 @@ public class RunicornPage {
 
     public WebElement getButtons() {
         return getDriver().findElement(By.id("buttons"));
+    }
+
+    public boolean isStartButtonEnabled() {
+       return !getStartButton().getAttribute("class").contains("disable_button");
+    }
+
+    public boolean isRestartButtonEnabled() {
+        return !getRestartButton().getAttribute("class").contains("disable_button");
     }
 
     public WebElement getStartButton() {
@@ -84,8 +97,53 @@ public class RunicornPage {
         return getDriver().findElement(By.id("canvas_wrapper"));
     }
 
+    public boolean isJumping() {
+        return (Boolean)getDriver().executeScript("function isJumping() {return the_unicorn.jumped;}; return isJumping();");
+    }
+
+    public void clickStartButton() {
+        waitAndClick(getStartButton());
+    }
+
+    public void clickRestartButton() {
+        waitAndClick(getRestartButton());
+    }
+
+    private void waitAndClick(WebElement button) {
+        long startTime = System.currentTimeMillis();
+        WebDriverWait wait = new WebDriverWait(driver, 300);
+        wait.until(ExpectedConditions.not(ExpectedConditions.attributeContains(button, "class", "disable_button")));
+        System.out.println("Elapsed time is " + (System.currentTimeMillis() - startTime));
+        button.click();
+    }
+
+    public boolean isGameStarted() {
+        return !isStartButtonEnabled() && !isRestartButtonEnabled();
+    }
+
+    public void waitForPageStarted() {
+
+    }
+
+    public void jump() {
+        WebElement body = getDriver().findElement(By.cssSelector("body"));
+        body.sendKeys(" ");
+    }
+
     protected RemoteWebDriver getDriver() {
         return driver;
     }
+
+    private void dumpMethods(String classname) {
+        try {
+        Method[] methods = Class.forName(classname).getDeclaredMethods();
+        for (Method method : methods) {
+            System.out.println(method.getName());
+        }
+    } catch (Exception ex) {
+        System.out.println("Failed to dump methods: " + ex.getMessage());
+    }
+    }
+
 
 }

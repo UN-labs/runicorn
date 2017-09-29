@@ -1,6 +1,7 @@
 package life.unspecified.runicorn;
 
 import static org.junit.Assert.fail;
+import static org.junit.Assert.assertTrue;
 
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -41,14 +42,26 @@ public class RunicornStepDefinitions {
 
 	@When("^I click start game$")
 	public void i_click_start_game() throws Throwable {
-		runicornPage.getStartButton().click();
+		runicornPage.clickStartButton();
 	}
 
 	@Then("^the game starts$")
 	public void the_game_starts() throws Throwable {
 		runicornPage.assertStartButtonDisabled();
 		runicornPage.assertRestartButtonDisabled();
-		fail("This implementation is junk; inspect via JS call");
+	}
+
+	@Given("^I end the game$")
+	public void i_end_the_game() throws Throwable {
+		long startTime = System.currentTimeMillis();
+		long MAX_TIME = 5000;
+		while(runicornPage.isGameStarted() && (System.currentTimeMillis( ) < (startTime + MAX_TIME))) {
+			try {
+				Thread.sleep(100);
+			} catch (java.lang.InterruptedException intEx) {
+        	}
+		}
+		System.out.println("Time to end game was " + (System.currentTimeMillis() - startTime) + " millis");
 	}
 
 	@Given("^the start game button is inactive$")
@@ -63,23 +76,23 @@ public class RunicornStepDefinitions {
 
 	@When("^I click restart game$")
 	public void i_click_restart_game() throws Throwable {
-		runicornPage.getRestartButton().click();
+		runicornPage.clickRestartButton();
 	}
 
 	@Given("^I have started the game$")
 	public void i_have_started_the_game() throws Throwable {
 		runicornPage = runicornPage.reset();	
-		runicornPage.getStartButton().click();
+		runicornPage.clickStartButton();
 	}
 
 	@When("^I press the space bar$")
-	public void i_press_the_space_ber() throws Throwable {
-     	runicornPage.getCanvas().sendKeys(" ");
+	public void i_press_the_space_bar() throws Throwable {
+     	runicornPage.jump();
 	}
 
 	@Then("^My unicorn jumps$")
 	public void my_unicorn_jumps() throws Throwable {
-		fail("This implementation is junk; inspect via JS call");
+		assertTrue("Should be jumping", runicornPage.isJumping());
 	}
 
 }
