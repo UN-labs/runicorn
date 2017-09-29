@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Mini obstacle game",
   "scripts": {
-    "test": "mocha test; node server.js"
+    "test": "mocha test"
   },
   "author": "Mehmet Burak Erman",
   "license": "MIT",

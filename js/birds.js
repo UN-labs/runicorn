@@ -8,8 +8,10 @@ function Birds() {
   this.x = bird_x;
   this.y = bird_y;
  
-  var r = floor(random(0, birds.length));
+  var r = Math.floor(Math.random(0, birds.length));
   var i = birds[r];
+
+  console.log("r", r, "i", i )
 
   this.speed = bird_speed;
 
