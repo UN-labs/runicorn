@@ -3,5 +3,6 @@ RUN mkdir /src
 WORKDIR /src
 COPY . /src
 RUN npm install
+RUN npm install -g http-server
 
-CMD npm test
+CMD http-server .

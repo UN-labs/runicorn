@@ -1,5 +1,5 @@
 
-suite('runicorn.birds', function() {
+suite('Runicorn.Birds', function() {
     
     setup(function(done) {
         the_birds.push( new Birds() )
