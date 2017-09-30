@@ -1,4 +1,4 @@
-## cyoa-unicorns : Page 0 Chapter 1
+## Runicorn : Page 0 Chapter 1
 
 ```
 Once upon a time a funny story was written for Starwest and YOU were put in charge. 
