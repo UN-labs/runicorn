@@ -1,27 +1,40 @@
-# Runicorn
+## cyoa-unicorns : Page 0 Chapter 1
 
-> Mini obstacle game built with [p5.js](http://p5js.org)
-
-<img src="https://media.giphy.com/media/l0Ex1pCI4FR6U1nhe/source.gif" />
-
-## Docker 
-
-### Build
 ```
-docker build . --tag runicorn
+Once upon a time a funny story was written for Starwest and YOU were put in charge. 
+
+Will you survive or will you die of dysentery?
 ```
 
-### Run
+
 ```
-docker run -it -p 3000:3000 runicorn
-```
-```
-Starting up http-server, serving .
-Available on:
-  http://127.0.0.1:3000
-  http://172.17.0.2:3000
+The basics:  
+- This codebase begins with an existing app and existing set of tests
+- Tests should represent the ice cream cone model
+  - Highest number of acceptance tests
+    - At first, these should be unmaintainable Selenium crap
+  - Some number of API tests
+  - very few unit tests
+- "legacy" application, with effort put toward testing, but somewhat misguided
+
+- new test lead comes in and should choose where to focus attention first
+- for the first 1 rainbow worth of effort, which direction do you choose?
 ```
 
-## Browsers
+<details>
+    <summary>click here to view <b>Execution command</b></summary>
 
-Runicorn works fine on Chrome and Opera.
+    ./execute.sh
+</details>
+
+
+<details>
+    <summary>click here to view <b>Test Results</b></summary>
+    <img width="50%" src="assets/results.png"/>
+</details>
+
+<hr>
+
+If you choose to spend one rainbow of effort on "API/Unit Tests": [turn to page 23](../page-23/README.md)
+
+If you choose to spend one rainbow of effort on "Switching Acceptance Test Framework": [turn to page 42](../page-42/README.md)
