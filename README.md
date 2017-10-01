@@ -26,7 +26,6 @@ while (1==1)
 
 <details>
     <summary>click here to view <b>Test Results</b></summary>
-    Need many more tests
     <img width="33%" src="assets/results.png"/>
 </details>
 
