@@ -7,9 +7,9 @@ function Obstacles() {
     this.x = obstacles_x;
     this.y = obstacles_y;
 
-    this.speed = game_speed;
+    //this.speed = game_speed || 0;
 
-    var r = floor(random(0, obstacles.length));
+    var r = Math.floor(Math.random(0, obstacles.length));
     var i = obstacles[r];
 
     if(i == obstacles[4]) {

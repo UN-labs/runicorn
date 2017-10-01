@@ -1,6 +1,9 @@
 var spec = {
   'unit': [
     'birds',
+    'cloud',
+    'obstacles',
+    'unicorn',
     'api'
   ]
 };
