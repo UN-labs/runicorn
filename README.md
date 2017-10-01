@@ -1,24 +1,40 @@
-## Runicorn : Page 0 Chapter 1
+## [Runicorn](../page-0/README.md) >> Page 42 Chapter 2
 
 ```
-Once upon a time a funny story was written for Starwest and YOU were put in charge. 
-
-Will you survive or will you die of dysentery?
+You dodge to the left and fall into a jungle of acceptance tests...
 ```
 
-
 ```
-The basics:  
-- This codebase begins with an existing app and existing set of tests
-- Tests should represent the ice cream cone model
-  ✔ Highest number of acceptance tests
-    - At first, these should be unmaintainable Selenium crap
-  ✔ Some number of API tests
-  ✔ very few unit tests
-✔ "legacy" application, with effort put toward testing, but somewhat misguided
+The basics ...
+- switching the framework takes time
+- but ... 1 or 2 acceptance test later, there is some more clarity around the state of the application across business people
+- tests are now part of the same codebase as the code
+- collective ownership
+- feedback loop is shorter
+- acceptance testa re more maintainable
+- tests are still missing a bit of specificity
+- some states are difficult to engineer
+ 
+Test Cases that should be in this branch (cucumber/selenium tests):
+- Background:
+    Given I am on the Runicorn homepage
 
-- new test lead comes in and should choose where to focus attention first
-- for the first 1 rainbow worth of effort, which direction do you choose?
+  Scenario: Gameplay is started on a new game
+    Given the start game button is active
+    And the restart button is inactive
+    When I click start game
+    Then the game starts
+
+  Scenario: Gameplay is restarted on a finished game
+    Given the start game button is inactive
+    And the restart game is active
+    When I click restart ganme
+    Then the game starts
+
+Notes on choices:
+- Yay! We see value in shared high level tests and our test strategy is sound; let's leave these in place at a high level and focus some more on lower level tests
+- We're on a roll! Let's add a bunch more tests! Let's apply this to all levels of tests, including unit tests!
+
 ```
 
 <details>
@@ -30,11 +46,13 @@ The basics:
 
 <details>
     <summary>click here to view <b>Test Results</b></summary>
+    Need many more tests
     <img width="33%" src="assets/results.png"/>
 </details>
 
 <hr>
 
-If you choose to spend one rainbow of effort on "API/Unit Tests": [turn to page 23](../page-23/README.md)
 
-If you choose to spend one rainbow of effort on "Switching Acceptance Test Framework": [turn to page 42](../page-42/README.md)
+If you choose Start Focusing on Lower Level Tests: [turn to page 8](../page-8/README.md)
+
+If you choose Cucumbers All The Way Down: [turn to page 17](../page-17/README.md)
