@@ -1,0 +1,48 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1506900973376' stop='1506900977258'>
+    <name>webdriver.io page</name>
+    <title>webdriver.io page</title>
+    <test-cases>
+        <test-case start='1506900973376' status='pending' stop='1506900973376'>
+            <name>should be a pending test</name>
+            <title>should be a pending test</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1506900973377' status='passed' stop='1506900977255'>
+            <name>should have the right title - the fancy generator way</name>
+            <title>should have the right title - the fancy generator way</title>
+            <labels/>
+            <parameters>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":5,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["/Users/shannoncode/repo/runicorn/test/at/specs/mocha.test.js"]'/>
+            </parameters>
+            <steps>
+                <step start='1506900973381' status='passed' stop='1506900977217'>
+                    <name>POST /wd/hub/session/fd7791c1087354f1255d5409387a585c/url</name>
+                    <title>POST /wd/hub/session/fd7791c1087354f1255d5409387a585c/url</title>
+                    <attachments>
+                        <attachment title='Request' source='788a90c3-9a32-46f4-b7ba-e17d2b5ee644-attachment.json' type='application/json' size='37'/>
+                        <attachment title='Response' source='68e4c93b-fba1-4a98-834f-c26cbd85f8f8-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1506900977224' status='passed' stop='1506900977252'>
+                    <name>GET /wd/hub/session/fd7791c1087354f1255d5409387a585c/title</name>
+                    <title>GET /wd/hub/session/fd7791c1087354f1255d5409387a585c/title</title>
+                    <attachments>
+                        <attachment title='Response' source='74e8a054-4fcd-4722-9abe-b8ad46480dd0-attachment.json' type='application/json' size='133'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

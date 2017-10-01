@@ -2,4 +2,6 @@
  .DS_Store
 target\
 !target\site\
-target/
+allure-report\
+report\
+
