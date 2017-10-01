@@ -11,9 +11,9 @@ Will you survive or will you die of dysentery?
 The basics:  
 - This codebase begins with an existing app and existing set of tests
 - Tests should represent the ice cream cone model
-  ✖ Highest number of acceptance tests
+  ✔ Highest number of acceptance tests
     - At first, these should be unmaintainable Selenium crap
-  ✖ Some number of API tests
+  ✔ Some number of API tests
   ✔ very few unit tests
 ✔ "legacy" application, with effort put toward testing, but somewhat misguided
 
