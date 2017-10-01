@@ -14,4 +14,12 @@ suite('Runicorn.Cloud', function() {
         assert.equal(the_cloud[0].y, 25)
     })
 
+    test('cloud left should be function', function() {
+        assert.isFunction(the_cloud[0].left)
+    })
+
+    test('cloud show should be function', function() {
+        assert.isFunction(the_cloud[0].show)
+    })
+
 })
