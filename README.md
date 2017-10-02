@@ -26,7 +26,7 @@ Other members of the team really want to start putting more focus on beefing up 
     <summary>click here to view <b>Execution command</b></summary>
 
     ./execute.sh
-</details
+</details>
 
 <hr>
 
