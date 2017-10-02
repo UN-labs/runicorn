@@ -13,6 +13,7 @@ sudo npm install wdio-allure-reporter -g
 cd test/cucumber/
 npm install webdriverio
 npm install wdio-cucumber-framework
+npm install wdio-allure-reporter
 yarn install
 yarn run wdio
 allure generate test/reports/allure-results/ --clean
