@@ -20,8 +20,8 @@ You are in Paradise
 
 <details>
     <summary>click here to view <b>Test Results</b></summary>
-    Need many more tests
     <img width="33%" src="assets/results.png"/>
+    <img width="33%" src="assets/results2.png"/>
 </details>
 
 <hr>
