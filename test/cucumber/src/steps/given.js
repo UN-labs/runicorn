@@ -36,6 +36,10 @@ defineSupportCode(({ Given }) => {
     nop)
     Given(/^the restart button is active$/,
     nop)
+    Given(/^the API is running$/,
+    nop)
+    Given(/^I have an empty the_birds array$/,
+    nop)
     /* Given(
         /^I open the (url|site) "([^"]*)?"$/,
         openWebsite

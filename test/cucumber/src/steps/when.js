@@ -24,6 +24,9 @@ defineSupportCode(({ When }) => {
     When(/^I click start game$/, nop)
     When(/^I click restart game$/, nop)
     When(/^I press the space bar$/, nop)
+    When(/^I send a get request to memory endpoint with a value of test$/, nop)
+    When(/^I send a get request to memory_check endpoint$/, nop)
+    When(/^I have inserted a single Bird object$/, nop)
     /* When(
         /^I (click|doubleclick) on the (link|button|element) "([^"]*)?"$/,
         clickElement

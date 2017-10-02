@@ -34,6 +34,9 @@ import nop from '../support/action/nop'
 defineSupportCode(({ Then }) => {
     Then(/^the game starts$/, nop)
     Then(/^My unicorn jumps$/, nop)
+    Then(/^the API returns test$/, nop)
+    Then(/^the zeroeth bird has a function called left$/, nop)
+    Then(/^the zeroeth bird has a speed of 2.5$/, nop)
     /* Then(
         /^I expect that the title is( not)* "([^"]*)?"$/,
         checkTitle
