@@ -1,13 +1,15 @@
 var assert = require('assert');
 
-describe('webdriver.io page', function() {
+describe('runicorn page', function() {
 
-    it('should be a pending test');
-
-    it('should have the right title - the fancy generator way', function () {
-        browser.url('/');
+    it('should be on correct page with title', function () {
+        
+        browser.url('http://172.19.0.3:8080')
+        var t = browser.getHTML('title')
+        //browser.finishLoading()
         var title = browser.getTitle();
-        assert.equal(title, 'WebdriverIO - WebDriver bindings for Node.js');
+        console.log("-------browser", browser, t)
+        assert.equal(title, 'Runicorn');
     });
 
 });

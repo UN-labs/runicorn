@@ -5,3 +5,13 @@ target\
 allure-report\
 report\
 
+.DS_Store
+test/at/report/
+node_modules
+allure-report/
+.settings
+report/
+target/
+.project
+.classpath
+errorShots/
