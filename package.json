@@ -10,6 +10,7 @@
   "dependencies": {
     "chai": "^4.1.2",
     "express": "^4.14.1",
+    "getos": "^3.0.1",
     "mocha": "^3.5.3",
     "wdio-mocha-framework": "^0.5.11",
     "wdio-selenium-standalone-service": "0.0.9"

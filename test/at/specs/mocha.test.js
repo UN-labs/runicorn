@@ -1,15 +1,24 @@
-var assert = require('assert');
+var assert = require('assert')
+var getos = require('getos')
+var ip = '172.26.0.2'
 
-describe('runicorn page', function() {
 
-    it('should be on correct page with title', function () {
-        
-        browser.url('http://172.19.0.3:8080')
+describe('Runicorn UI Tests', function() {
+    it('Given I am on the Runicorn page', function () {
+        if (getHostOS() !== "darwin") {
+            ip = '172.19.0.3'
+        }
+        browser.url('http://'+ip+':8080')
         var t = browser.getHTML('title')
-        //browser.finishLoading()
-        var title = browser.getTitle();
-        console.log("-------browser", browser, t)
-        assert.equal(title, 'Runicorn');
-    });
+        var title = browser.getTitle()
+        assert.equal(title, 'Runicorn')
+    })
+})
 
-});
+function getHostOS(){
+    return getos(function(e,os) {
+        //if(e) return console.log(e)
+        //console.log("Your OS is:" +JSON.stringify(os))
+        return os.os
+      })
+}
