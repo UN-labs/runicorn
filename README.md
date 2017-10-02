@@ -32,6 +32,6 @@ Other members of the team really want to start putting more focus on beefing up 
 <hr>
 
 
-If you choose Start Focusing on Lower Level Tests: [turn to page 8](../page-8/README.md)
+If you choose Start Focusing on Lower Level Tests: [turn to page 74](../page-74/README.md)
 
 If you choose Cucumbers All The Way Down: [turn to page 17](../page-17/README.md)
