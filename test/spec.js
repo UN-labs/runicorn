@@ -1,7 +1,10 @@
 var spec = {
   'unit': [
     'birds',
-    'api'
+    'api',
+    'cloud',
+    'obstacles',
+    'unicorn',
   ]
 };
 Object.keys(spec).map(function(folder) {
