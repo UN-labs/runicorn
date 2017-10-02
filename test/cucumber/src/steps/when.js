@@ -1,6 +1,6 @@
 import { defineSupportCode } from 'cucumber';
 
-import clearInputField from '../support/action/clearInputField';
+/* import clearInputField from '../support/action/clearInputField';
 import clickElement from '../support/action/clickElement';
 import closeLastOpenedWindow from '../support/action/closeLastOpenedWindow';
 import deleteCookie from '../support/action/deleteCookie';
@@ -16,11 +16,15 @@ import selectOptionByIndex from '../support/action/selectOptionByIndex';
 import setCookie from '../support/action/setCookie';
 import setInputField from '../support/action/setInputField';
 import setPromptText from '../support/action/setPromptText';
-import submitForm from '../support/action/submitForm';
+import submitForm from '../support/action/submitForm'; */
+import nop from '../support/action/nop'
 
 
 defineSupportCode(({ When }) => {
-    When(
+    When(/^I click start game$/, nop)
+    When(/^I click restart game$/, nop)
+    When(/^I press the space bar$/, nop)
+    /* When(
         /^I (click|doubleclick) on the (link|button|element) "([^"]*)?"$/,
         clickElement
     );
@@ -103,5 +107,5 @@ defineSupportCode(({ When }) => {
     When(
         /^I move to element "([^"]*)?"(?: with an offset of (\d+),(\d+))*$/,
         moveToElement
-    );
+    ); */
 });

@@ -1,6 +1,6 @@
 import { defineSupportCode } from 'cucumber';
 
-import checkContainsAnyText from '../support/check/checkContainsAnyText';
+/* import checkContainsAnyText from '../support/check/checkContainsAnyText';
 import checkIsEmpty from '../support/check/checkIsEmpty';
 import checkContainsText from '../support/check/checkContainsText';
 import checkCookieContent from '../support/check/checkCookieContent';
@@ -19,7 +19,7 @@ import compareText from '../support/check/compareText';
 import isEnabled from '../support/check/isEnabled';
 import isVisible from '../support/check/isVisible';
 import openWebsite from '../support/action/openWebsite';
-import resizeScreenSize from '../support/action/resizeScreenSize';
+import resizeScreenSize from '../support/action/resizeScreenSize'; */
 import nop from '../support/action/nop'
 import openRunicorn from '../support/action/openRunicorn'
 
@@ -31,6 +31,10 @@ defineSupportCode(({ Given }) => {
     Given(/^the start game button is inactive$/,
     nop)
     Given(/^I have started the game$/,
+    nop)
+    Given(/^the restart button is inactive$/,
+    nop)
+    Given(/^the restart button is active$/,
     nop)
     /* Given(
         /^I open the (url|site) "([^"]*)?"$/,

@@ -4,17 +4,14 @@ sudo rm -rf test/cucumber/allure-report/
 sudo rm -rf test/cucumber/test/reports/allure-results/
 docker-compose -f runicorn-compose.yml up&
 sudo npm install yarn -g
-sudo npm install webdriverio -g
-sudo npm install wdio-json-reporter -g
-sudo npm install wdio-spec-reporter -g
-sudo npm install wdio-mocha-framework -g
-sudo npm install wdio-allure-reporter -g
+#sudo npm install webdriverio -g
+#sudo npm install wdio-json-reporter -g
+#sudo npm install wdio-spec-reporter -g
+#sudo npm install wdio-mocha-framework -g
+#sudo npm install wdio-allure-reporter -g
 #wdio test/at/wdio.conf.js
 cd test/cucumber/
-npm install webdriverio
-npm install wdio-cucumber-framework
-npm install wdio-allure-reporter
-yarn install
+npm install webdriverio wdio-allure-reporter wdio-cucumber-framework
 yarn run wdio
 allure generate test/reports/allure-results/ --clean
 #source test.sh

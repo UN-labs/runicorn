@@ -1,6 +1,6 @@
 import { defineSupportCode } from 'cucumber';
 
-import checkClass from '../support/check/checkClass';
+/* import checkClass from '../support/check/checkClass';
 import checkContainsAnyText from '../support/check/checkContainsAnyText';
 import checkIsEmpty from '../support/check/checkIsEmpty';
 import checkContainsText from '../support/check/checkContainsText';
@@ -27,11 +27,14 @@ import isEnabled from '../support/check/isEnabled';
 import isExisting from '../support/check/isExisting';
 import isVisible from '../support/check/isVisible';
 import waitFor from '../support/action/waitFor';
-import waitForVisible from '../support/action/waitForVisible';
+import waitForVisible from '../support/action/waitForVisible'; */
+import nop from '../support/action/nop'
 
 
 defineSupportCode(({ Then }) => {
-    Then(
+    Then(/^the game starts$/, nop)
+    Then(/^My unicorn jumps$/, nop)
+    /* Then(
         /^I expect that the title is( not)* "([^"]*)?"$/,
         checkTitle
     );
@@ -174,5 +177,5 @@ defineSupportCode(({ Then }) => {
     Then(
         /^I expect that a (alertbox|confirmbox|prompt)( not)* contains the text "([^"]*)?"$/,
         checkModalText
-    );
+    ); */
 });
