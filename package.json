@@ -10,6 +10,19 @@
   "dependencies": {
     "chai": "^4.1.2",
     "express": "^4.14.1",
-    "mocha": "^3.5.3"
+    "getos": "^3.0.1",
+    "mocha": "^3.5.3",
+    "wdio-mocha-framework": "^0.5.11",
+    "wdio-selenium-standalone-service": "0.0.9"
+  },
+  "devDependencies": {
+    "wdio-concise-reporter": "^0.1.2",
+    "wdio-firefox-profile-service": "^0.1.0",
+    "wdio-json-reporter": "^0.2.1",
+    "wdio-mocha-framework": "^0.5.11",
+    "wdio-phantomjs-service": "^0.2.2",
+    "wdio-selenium-standalone-service": "0.0.9",
+    "wdio-spec-reporter": "^0.1.2",
+    "wdio-static-server-service": "^1.0.1"
   }
 }

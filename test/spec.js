@@ -1,6 +1,7 @@
 var spec = {
   'unit': [
-    'birds'
+    'birds',
+    'api'
   ]
 };
 Object.keys(spec).map(function(folder) {
