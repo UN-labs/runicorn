@@ -1,6 +1,6 @@
 ## [Runicorn](../page-0/README.md) >> [Page 23 Chapter 2](../page-23/README.md) >> Page 74 Chapter 3
 
-By the time you get here, you have chosen to spend one rainbow of effort on one unit tests, and one rainbow of effort on some higher level acceptance tests.
+By the time you get here, you have chosen to spend one rainbow of effort on unit tests, and one rainbow of effort on some higher level acceptance tests.
 
 Overall, this represents a balance of approaches.  Unit tests are important for so many reasons, many of which I have talked about today, and so are higher level tests.  The entire team is focused on owning all of the tests together, whether they are higher level or lower level.  Testers are contributing with scenarios, possibly writing some test automation code, and also with cases and conditions that should be covered in unit tests.  
 
