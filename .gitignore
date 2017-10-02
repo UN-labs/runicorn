@@ -7,7 +7,7 @@ report\
 
 .DS_Store
 test/at/report/
-node_modules
+node_modules/
 allure-report/
 .settings
 report/
