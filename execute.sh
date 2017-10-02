@@ -11,6 +11,8 @@ sudo npm install wdio-mocha-framework -g
 sudo npm install wdio-allure-reporter -g
 #wdio test/at/wdio.conf.js
 cd test/cucumber/
+npm install webdriverio
+npm install wdio-cucumber-framework
 yarn install
 yarn run wdio
 allure generate test/reports/allure-results/ --clean
