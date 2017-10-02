@@ -7,11 +7,11 @@
 
 Holy Smokes! Who would ever believe that you would finally meet a real live unicorn! Your dumb big brother Billy always made fun of you for believing in magical beasts. If only he could see you now, brushing the beautiful mane of your new best friend Pearlhoof! 
 
-But not all is riding rainbows and brushing manes; Pearlhoof needs to get home before the sun sets and...well, let's be honest. His eyesight is not the greatest. He can run faster then the wind and he can jump as high as the moon. But he can't see trees or birds, and needs your help to get home without making a mess!
+But not all is riding rainbows and brushing manes; Pearlhoof needs to get home before the sun sets and...well, let's be honest. His eyesight is not the greatest. He can run faster than the wind and he can jump as high as the moon. But he can't see trees or birds, and he needs your help to get home without making a mess!
 
-You have the magical tools you won from the Gumdrop Fairy. The Golden Bridle and Harness will help you guide Pearlhoof with clarity (AKA switch the acceptance test framework). The murky Purple Potion of Fundamentals will make sure Pearlhoof won't falter unexpectedly (AKA focus on API and Unit tests).
+You have the magical tools you won from the Gumdrop Fairy. The murky Purple Potion of Fundamentals will make sure Pearlhoof won't falter unexpectedly (AKA focus on API and Unit tests). The Golden Bridle and Harness will help you guide Pearlhoof with clarity (AKA switch the acceptance test framework). 
 
-You have to help Pearlhoof find safety, or at least try. Will you guide Pearlhoof with the Golden Harness? Or do you drink the potion to ensure that he's mastered the basics of running and jumping and hope that's enough to get him home?
+You have to help Pearlhoof find safety, or at least try. Do you feed him the potion to ensure that he's mastered the basics of running and jumping and hope that's enough to get him home? Or will you guide Pearlhoof with the Golden Harness?
 
 *******
 
