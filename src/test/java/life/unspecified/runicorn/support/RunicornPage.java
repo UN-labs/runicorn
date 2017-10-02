@@ -1,18 +1,21 @@
 package life.unspecified.runicorn.support;
 
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.By;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
-import static org.junit.Assert.*;
-// import static org.junit.Assert.assertEquals;
-// import static org.junit.Assert.assertNotNull;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.lang.reflect.Method;
 // import static org.openqa.selenium.support.ui.ExpectedConditions.attributeContains;
 // import static org.openqa.selenium.support.ui.ExpectedConditions.not;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
+// import static org.junit.Assert.assertEquals;
+// import static org.junit.Assert.assertNotNull;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class RunicornPage {
 
