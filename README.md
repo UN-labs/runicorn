@@ -2,7 +2,7 @@
 
 Acceptance Tests ARE THE BEST!!!
 
-You hve chosen to start with focusing your attention on switching to a new framework for these acceptance tests. As non-programmer testers learn selenium, they often write great user flows, but as they are learning the programming part of things, it takes a while to learn some modern programming practices, like maintainability, modularity, things like Page Objects, etc.
+You have chosen to start with focusing your attention on switching to a new framework for these acceptance tests. As non-programmer testers learn selenium, they often write great user flows, but as they are learning the programming part of things, it takes a while to learn some modern programming practices, like maintainability, modularity, things like Page Objects, etc.
 
 After researching with the team, an approach with BDD using Cucumber seemed to make the most sense.  The scenarios and test code are all written in the same codebase with the production code, so everyone sees progress as it happens and can run the tests at any time.  The scenarios help to drive everyone to a common language, with vocabulary for components and behaviors that is consistent throughout and through different parts of the application.  The scenarios are plain english and business level contributors can both understand and contribute.
 
