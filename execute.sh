@@ -19,8 +19,8 @@ allure generate test/reports/allure-results/ --clean
 #echo "done"
 cd ../../
 docker-compose -f runicorn-compose.yml down
-open -na "Google Chrome" --args --incognito http://127.0.0.1:3000/test &>/dev/null
-google-chrome --incognito http://127.0.0.1:3000/test& &>/dev/null
+#open -na "Google Chrome" --args --incognito http://127.0.0.1:3000/test &>/dev/null
+#google-chrome --incognito http://127.0.0.1:3000/test& &>/dev/null
 open -na "Google Chrome" --args --incognito http://127.0.0.1:3000/test/cucumber/allure-report &>/dev/null
 google-chrome --incognito http://127.0.0.1:3000/test/cucumber/allure-report& &>/dev/null
 npm start
