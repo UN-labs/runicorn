@@ -1,5 +1,5 @@
-docker-compose -f runicorn-compose.yml up&
 sudo npm install -g allure-commandline
+docker-compose -f runicorn-compose.yml up&
 sudo npm install webdriverio -g
 sudo npm install wdio-json-reporter -g
 sudo npm install wdio-spec-reporter -g
