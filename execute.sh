@@ -1,4 +1,5 @@
 sudo npm install -g allure-commandline
+npm install
 docker-compose -f runicorn-compose.yml up&
 sudo npm install webdriverio -g
 sudo npm install wdio-json-reporter -g
@@ -14,7 +15,6 @@ open -na "Google Chrome" --args --incognito http://127.0.0.1:3000/test &>/dev/nu
 google-chrome --incognito http://127.0.0.1:3000/test& &>/dev/null
 open -na "Google Chrome" --args --incognito http://127.0.0.1:3000/allure-report &>/dev/null
 google-chrome --incognito http://127.0.0.1:3000/allure-report& &>/dev/null
-npm install
 npm start
 rm -rf allure-report/
 
