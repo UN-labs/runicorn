@@ -1,15 +1,23 @@
-## [Runicorn](../page-0/README.md) >> [Page 42 Chapter 2](../page-42/README.md) >> Page 8 Chapter 3
+## [Runicorn](../page-0/README.md) >> [Page 42 Chapter 2](../page-42/README.md) >> Page 17 Chapter 3
 
 ```
-Acceptance tests changes good, now focus on unit
+Cucumbers all the way down
 ```
 
 ```
 The basics:
-- This will be the same codebase as page 74, we have balanced lower level tests and the higher level tests well
+- Right tools for the job
+- multiple frameworks now
+- unit test feedback loops should be so so fast, like 5 seconds, and cucmber has too much overhead
+
+Test Cases:
+- 
+
+
 ```
 
-You are in Paradise
+Eaten by a huge cucumber.
+
 
 <details>
     <summary>click here to view <b>Execution command</b></summary>
@@ -25,6 +33,5 @@ You are in Paradise
 </details>
 
 <hr>
-
 
 To try again: [turn to page 42](../page-42/README.md)
